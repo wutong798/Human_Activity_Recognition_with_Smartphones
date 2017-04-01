@@ -158,8 +158,8 @@ plot(cvfit)
 ```g
 通过cross validation我们找到最佳的lamda值
 如果，lamda值没有在区间内实现收敛，我们可以根据对信息丢失比率、feature数量综合选择合适的lamda。
-![lamda-feture](./images/Rplot03.png)
-![dev](./images/Rplot04.png)
+![](./images/Rplot03.png)
+![](./images/Rplot04.png)
 为了和通过相关性分析的筛选结果进行比较，选择84个特征。
 ```R
 f84 <- coef(fit, s = 0.0095)
