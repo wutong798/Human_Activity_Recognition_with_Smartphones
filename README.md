@@ -1,4 +1,4 @@
-﻿#读取数据
+#读取数据
 需要用到的包
 ```R
 library("data.table")
@@ -158,8 +158,13 @@ plot(cvfit)
 ```g
 通过cross validation我们找到最佳的lamda值
 如果，lamda值没有在区间内实现收敛，我们可以根据对信息丢失比率、feature数量综合选择合适的lamda。
+<<<<<<< HEAD
 ![lamda-feture](./image/Rplot03.png)
 ![dev](./image/Rplot04.png)
+=======
+![](./images/Rplot03.png)
+![](./images/Rplot04.png)
+>>>>>>> origin/master
 为了和通过相关性分析的筛选结果进行比较，选择84个特征。
 ```R
 f84 <- coef(fit, s = 0.0095)
@@ -210,7 +215,11 @@ xgb给出了24个feature
 ##24:    V373 0.0004467052 0.01267518   0.03125
 ```
 Feature相对重要性如下图
+<<<<<<< HEAD
 ![](./image/Rplot06.png)
+=======
+![](./images/Rplot06.png)
+>>>>>>> origin/master
 #建模
 ##聚类分析
 下面我们尝试使用聚类，看PCA给出的成分能否实现activity的分类。以下是用来画层次聚类图的两个函数
