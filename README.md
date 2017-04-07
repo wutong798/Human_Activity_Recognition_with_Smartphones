@@ -598,6 +598,14 @@ system.time(result4 <- KNNModel(dtTrain_pca80, dtActivityTrain, dtTest_pca80, dt
 **<span id="conclusion">结果&可视化</span>**
 ------------
 
+ - 特征工程
+    - XGBoost在随机森林、SVM、XGboost学习模型中效果更好
+    - PCA在KNN、Lasso学习模型中效果更好
+ - 模型选择
+    - lasso模型能够实现94.9%的识别率，但训练时间过长。
+    - knn、Xgboost性价比更好。
+    - 
+
 | Features\Model        | Decision Tree | Lasso         |Random Forest  |XGBoost        |SVM            |KNN            |
 |:---------------------:|:--------------|:--------------|:--------------|:--------------|:--------------|:--------------|
 | All Features          | 83.0% - 3.7s  |94.94% - 4446s | 90.0% - 706s  | 90.6% - 17.1s | 89.7% - 130s  | 90.6% - 33s   |
